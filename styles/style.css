@@ -1,0 +1,205 @@
+body {
+	box-sizing: border-box;
+	
+}
+
+/*Estilização Header*/
+
+
+.cabecalho {	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 280px;
+	background: #060505;
+
+
+}
+
+.imagem__perfil img{
+	width: 60%;
+	height: 60%;
+	border-radius: 50%;
+}
+
+.navegacao__container ul {
+	display: flex;
+	width: 100%;
+	gap: 4%;
+	position: relative;
+
+}
+
+.navegacao a {
+	display: flex;
+	flex-direction: row;
+	text-transform: uppercase;
+	color: rgb(252, 242, 242);
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.navegacao a:hover{
+	color: #6499E9;
+	text-decoration: none;
+}
+
+
+/* Estilização do Quem sou Eu */
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+
+.quemSou {
+	padding: 3em 0;
+	background: #fff;
+	color: #7D7C7C;
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Outfit', sans-serif;
+	max-width: 1200px; 
+
+}
+
+.quemSou p {
+  text-align: center;
+  font-size: 1.2rem;
+	
+}
+
+.quemSou strong {
+	color: #0c0c0c;
+}
+
+.quemSou em {
+	font-style: italic;
+}
+
+.clave {
+	margin: 30px;
+	width: 115px;
+	float: left;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px #D0D4CA ;
+}
+
+.clave:hover {
+	box-shadow: 4px 4px 4px #af7f11 ;
+}
+
+.orcamento {
+	text-align: center;
+}
+
+
+.link__instagram {
+	font-size: 20px;
+	text-decoration: none;
+	color: #DA0C81;
+	border-radius: 10px;
+	font-weight: 900;
+}
+
+.link__instagram:hover {
+	background-color: #f5c7e1;
+}
+
+
+
+
+
+
+/*Estilização Banner*/
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	max-width: 100%;
+	height: 490px;
+	overflow-x: scroll;
+}
+
+.banner img {
+	flex: 1;
+	border: #FFFFFF solid 0.1px;
+
+}
+
+/* Estilização dos videos de apresentação*/
+
+.apresentacao__videos {
+	display: flex;
+	padding: 0.5em;
+}
+
+/* Estilização Rodapé */
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyrigth {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px;
+}
+
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin:  0 0 10px;
+
+}
+
+/* Media Query */
+
+@media screen and (max-width: 738px) {
+
+	.imagem__perfil {
+	  margin: 0 auto; /* Centraliza horizontalmente */
+	}
+  
+	/* Estilos específicos para a navegação (nav) */
+	.navegacao__container ul {
+	  display: flex;
+	  flex-direction: column;
+	 
+	}
+
+	.banner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.banner img {
+		width: 100%;
+		border: #FFFFFF solid 0.1px;
+  }
+
+	.apresentacao__videos {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+}
