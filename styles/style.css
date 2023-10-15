@@ -166,6 +166,82 @@ form label, form legend {
 
 }
 
+
+/* Contatos */
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+	padding: 3em;
+
+}
+
+.titulo__contatos{
+    color: #252B48;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: calc(1.325rem + .9vw);
+
+}
+
+.list__contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 50px;
+    padding: 0 1em;
+    
+}
+
+.navegation__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.item__contatos {
+    text-decoration: none;
+    align-items: center;
+	border-radius: 4px;
+   
+}
+
+
+
+
+
+
+.link__tikTok,
+.link__instagram,
+.link__facebook{
+    color: #0E2954;
+	font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+
+}
+
+.link__tikTok:hover {
+	background-color: #000000;
+	color: #fff;
+}
+
+.link__instagram:hover {
+	background-color: #AE445A;
+	color: #fff;
+}
+
+.link__facebook:hover {
+	background-color: #6499E9;
+	color: #fff;
+}
+
+
+
 /* Media Query */
 
 @media screen and (max-width: 738px) {
