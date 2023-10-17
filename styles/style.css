@@ -1,5 +1,7 @@
 body {
+	max-width: 100%;
 	box-sizing: border-box;
+	background-color: #000000;
 	
 }
 
@@ -18,7 +20,7 @@ body {
 }
 
 .imagem__perfil img{
-	width: 60%;
+	width: 35%;
 	height: 60%;
 	border-radius: 50%;
 }
@@ -56,21 +58,40 @@ body {
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
-	font-family: 'Oswald', sans-serif;
-
+	font-family: 'Nunito', sans-serif;
+	color: blue;
+	font-size: 2rem;
 }
 
 
 .quemSou {
 	padding: 3em 0;
-	background: #fff;
-	color: #7D7C7C;
+	color: #e7ecf0;
 	width: 90%;
 	margin: 0 auto;
-	font-family: 'Outfit', sans-serif;
-	max-width: 1200px; 
+	font-family: 'Nunito', sans-serif;	max-width: 1200px;
+	position: relative;
+  }
 
-}
+  .quemSou video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Preenche toda a seção mantendo a proporção */
+	z-index: -1;
+  }
+  
+
+  .quemSou p {
+	text-align: center;
+	font-size: 1.2rem;
+	background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente para o texto */
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar o texto */
+  }
 
 .quemSou p {
   text-align: center;
@@ -86,38 +107,25 @@ body {
 	font-style: italic;
 }
 
-.clave {
-	margin: 30px;
-	width: 115px;
-	float: left;
-	border-radius: 20px;
-	box-shadow: 3px 3px 3px #D0D4CA ;
-}
-
-.clave:hover {
-	box-shadow: 4px 4px 4px #af7f11 ;
-}
-
 .orcamento {
+	color: #000000;
+	font-weight: 900;
 	text-align: center;
+	font-size: 2rem;
 }
 
 
-.link__instagram {
-	font-size: 20px;
+.link__instagram__texto {
+	font-size: 2rem;
 	text-decoration: none;
 	color: #DA0C81;
 	border-radius: 10px;
 	font-weight: 900;
 }
 
-.link__instagram:hover {
+.link__instagram__texto:hover {
 	background-color: #f5c7e1;
 }
-
-
-
-
 
 
 /*Estilização Banner*/
@@ -141,19 +149,22 @@ body {
 
 .apresentacao__videos {
 	display: flex;
-	padding: 0.5em;
+	justify-content: center;
+	align-items: stretch;
 }
 
 /* Estilização Rodapé */
 
 footer {
-	text-align: center;
-	background: url("bg.jpg");
-	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #000000;
+
 }
 
 .copyrigth {
-	color: #FFFFFF;
+	text-align: center;
+	color: #eae8ed;
 	font-size: 13px;
 	margin: 20px;
 }
@@ -211,11 +222,6 @@ form label, form legend {
    
 }
 
-
-
-
-
-
 .link__tikTok,
 .link__instagram,
 .link__facebook{
@@ -246,11 +252,15 @@ form label, form legend {
 
 @media screen and (max-width: 738px) {
 
-	.imagem__perfil {
-	  margin: 0 auto; /* Centraliza horizontalmente */
+	.cabecalho {
+		height: 200px;
+	}
+
+	.imagem__perfil img {
+	width: 40%;
+	  margin: 0 auto;
 	}
   
-	/* Estilos específicos para a navegação (nav) */
 	.navegacao__container ul {
 	  display: flex;
 	  flex-direction: column;
