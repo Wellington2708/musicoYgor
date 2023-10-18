@@ -1,5 +1,4 @@
 body {
-	max-width: 100%;
 	box-sizing: border-box;
 	background-color: #000000;
 	
@@ -25,11 +24,9 @@ body {
 	border-radius: 50%;
 }
 
-.navegacao__container ul {
+.navegacao ul li {
 	display: flex;
-	width: 100%;
-	gap: 4%;
-	position: relative;
+	list-style-type: none;
 
 }
 
@@ -67,7 +64,6 @@ body {
 .quemSou {
 	padding: 3em 0;
 	color: #e7ecf0;
-	width: 90%;
 	margin: 0 auto;
 	font-family: 'Nunito', sans-serif;
 	position: relative;
@@ -99,14 +95,6 @@ body {
 	
 }
 
-.quemSou strong {
-	color: #0c0c0c;
-}
-
-.quemSou em {
-	font-style: italic;
-}
-
 .orcamento {
 	color: #000000;
 	font-weight: 900;
@@ -130,29 +118,29 @@ body {
 
 /*Estilização Banner*/
 
-.banner {
+.banner{
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
-	max-width: 100%;
 	height: 490px;
-	overflow-x: scroll;
 }
 
 .banner img {
-	flex: 1;
-	border: #FFFFFF solid 0.1px;
+	width: 33vw;
+	
+	
 
 }
+
 
 /* Estilização dos videos de apresentação*/
 
 .apresentacao__videos {
 	display: flex;
 	justify-content: center;
-	align-items: stretch;
+	
+	background-color: black;
 }
-
 /* Estilização Rodapé */
 
 footer {
@@ -250,20 +238,26 @@ form label, form legend {
 
 /* Media Query */
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 760px) {
 
 	.cabecalho {
 		height: 200px;
 	}
 
 	.imagem__perfil img {
-	width: 40%;
-	  margin: 0 auto;
+		width: 160px;
+	  	margin: 0 auto;
+		padding-left: 1em;
 	}
   
-	.navegacao__container ul {
+	.navegacao {
+		padding: 1em;
+	}
+
+	.navegacao ul li{
 	  display: flex;
 	  flex-direction: column;
+	  
 	 
 	}
 
@@ -282,10 +276,12 @@ form label, form legend {
 
 	.apresentacao__videos {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		flex-wrap: wrap;
+		background-color: #000000;
+	
 
-	}
+	} 
+
+
 
 }
