@@ -1,28 +1,39 @@
-# Site promocional de músico
+# Ygor Santos Música
 
-Esse projeto está sendo criado para a promoção de um músico
-talentoso e com um dom sobrenatural.
-Nele utilizo HTML, CSS, JavaScript e Bootstrap.
+## Descrição
+Este é o código-fonte do site do Ygor Santos Música. O site é voltado para apresentar informações sobre Ygor Santos, um cantor e músico de Goiânia.
 
-#####################
+## Estrutura de Arquivos
 
-Para o projeto funcionar em toda sua capacidade, é necessário 
-que o úsuario faça a interação a partir do clique nos links
-localizados no cabeçalho para interagir entre as páginas.
-Também há videos postados via Instagram, sendo necessário
-o clique para dar o play no conteúdo.
+- **styles/style.css:** Este é o arquivo de estilo CSS utilizado no site.
+- **contato.html:** Página de contato do site.
 
-######################
+## Tecnologias Utilizadas
 
-Aos usuários, façam bom proveito curtindo,aprecisando o talento
-do jovem cantor e entrando em contato para saber mais sobre valores e apresentações do músico em questão.
+- HTML
+- CSS
+- Bootstrap 5.3.2
+- Fontes do Google (Oswald, Outfit, Nunito, Arvo)
 
-######################
+## Estrutura do Código HTML
 
-Aos DEVS, esse é um projeto com intenção de praticar e aplicar conhecimentos adiquiridos através de cursos profissionalizante. 
-Talvez seja simples, tenho muito que desenvolver e aprender,
-e assim farei.
+### Header
+O cabeçalho contém a imagem de perfil e a barra de navegação.
 
+### Main
+A seção principal contém duas partes:
 
+1. **Quem Sou:** Apresentação de Ygor Santos, sua história, experiência, e serviços oferecidos.
+2. **Banner:** Exibição de imagens relacionadas ao trabalho de Ygor Santos.
 
+3. **Apresentação de Vídeos:** Incorporação de vídeos do Instagram usando a tag `<blockquote>`.
 
+### Footer
+O rodapé contém o logo de Ygor Santos e a declaração de direitos autorais.
+
+## Contato
+Para entrar em contato, visite a [página de contato](contato.html).
+
+---
+
+Esse é o código-fonte do site do Ygor Santos Música. Se houver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
