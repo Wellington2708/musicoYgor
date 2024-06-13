@@ -1,24 +1,45 @@
-body {
+:root {
+	--white: #fff;
+	--black: #000;
+	--light-pink: rgb(252, 242, 242);
+	--light-blue: #3759bf;
+	--opacity-white: rgba(255, 255, 255, 0.8);
+	--dark-brown: rgb(15, 15, 16);
+	--pink: #DA0C81;
+	--medium-pink: #f5c7e1;
+	--dark-blue: #252B48;
+	--instagram-color: #AE445A;
+
+
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
-	background-color: #000000;
-	
+}
+
+body {
+	background-color: var(--black);
+
 }
 
 /*Estilização Header*/
 
 
-.cabecalho {	
+.cabecalho {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	height: 280px;
-	background: #060505;
+	background: var(--black);
 
 
 }
 
-.imagem__perfil img{
+.imagem__perfil img {
 	width: 35%;
 	height: 60%;
 	border-radius: 50%;
@@ -34,7 +55,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	text-transform: uppercase;
-	color: rgb(252, 242, 242);
+	color: var(--light-pink);
 	font-weight: bold;
 	font-size: 30px;
 	text-decoration: none;
@@ -42,8 +63,8 @@ body {
 
 }
 
-.navegacao a:hover{
-	color: #3759bf;
+.navegacao a:hover {
+	color: var(--light-blue);
 	text-decoration: none;
 }
 
@@ -55,7 +76,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Nunito', sans-serif;
 	position: relative;
-  }
+}
 
 
 .titulo-principal {
@@ -63,46 +84,51 @@ body {
 	font-size: 2em;
 	clear: left;
 	font-family: 'Arvo', serif;
-	color: rgb(15, 15, 16);
+	color: var(--dark-brown);
 	font-size: 3rem;
-	background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para o texto */
+	background: var(--opacity-white);
+	/* Fundo semi-transparente para o texto */
 
 }
 
 
 
-  .quemSou video {
+.quemSou video {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover; /* Preenche toda a seção mantendo a proporção */
+	object-fit: cover;
+	/* Preenche toda a seção mantendo a proporção */
 	z-index: -1;
-  }
-  
+}
 
-  .quemSou p {
-	text-align: center;
-	color: #000000;
-	font-size: 1.2rem;
-	background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para o texto */
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Sombra para destacar o texto */
-  }
 
 .quemSou p {
-  text-align: center;
-  font-size: 1.2rem;
-	
+	text-align: center;
+	color: var(--black);
+	font-size: 1.2rem;
+	background: var(--opacity-white);
+	/* Fundo semi-transparente para o texto */
+	border-radius: 5px;
+	box-shadow: 0 0 10px var(--black);
+	/* Sombra para destacar o texto */
+}
+
+.quemSou p {
+	text-align: center;
+	font-size: 1.2rem;
+
 }
 
 .orcamento {
-	color: #000000;
+	color: var(--black);
 	font-weight: 900;
 	text-align: center;
 	font-size: 2rem;
-	background: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para o texto */
+	background: var(--opacity-white);
+	/* Fundo semi-transparente para o texto */
 
 }
 
@@ -110,19 +136,19 @@ body {
 .link__instagram__texto {
 	font-size: 2rem;
 	text-decoration: none;
-	color: #DA0C81;
+	color: var(--pink);
 	border-radius: 10px;
 	font-weight: 900;
 }
 
 .link__instagram__texto:hover {
-	background-color: #f5c7e1;
+	background-color: var(--medium-pink);
 }
 
 
 /*Estilização Banner*/
 
-.banner{
+.banner {
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
@@ -131,8 +157,8 @@ body {
 
 .banner img {
 	width: 33vw;
-	
-	
+
+
 
 }
 
@@ -142,30 +168,32 @@ body {
 .apresentacao__videos {
 	display: flex;
 	justify-content: center;
-	
-	background-color: black;
+
+	background-color: var(--black);
 }
+
 /* Estilização Rodapé */
 
 footer {
 	display: flex;
 	flex-direction: column;
-	background-color: #000000;
+	background-color: var(--black);
 
 }
 
 .copyrigth {
 	text-align: center;
-	color: #eae8ed;
+	color: var(--medium-pink);
 	font-size: 13px;
 	margin: 20px;
 }
 
 
-form label, form legend {
+form label,
+form legend {
 	display: block;
 	font-size: 20px;
-	margin:  0 0 10px;
+	margin: 0 0 10px;
 
 }
 
@@ -173,69 +201,69 @@ form label, form legend {
 /* Contatos */
 
 .contatos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	height: 100%;
 	padding: 3em;
 
 }
 
-.titulo__contatos{
-    color: #252B48;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: calc(1.325rem + .9vw);
+.titulo__contatos {
+	color: #252B48;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: calc(1.325rem + .9vw);
 
 }
 
 .list__contatos {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 50px;
-    padding: 0 1em;
-    
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	font-size: 50px;
+	padding: 0 1em;
+
 }
 
 .navegation__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .item__contatos {
-    text-decoration: none;
-    align-items: center;
+	text-decoration: none;
+	align-items: center;
 	border-radius: 4px;
-   
+
 }
 
 .link__tikTok,
 .link__instagram,
-.link__facebook{
-    color: #0E2954;
+.link__facebook {
+	color: var(--dark-blue);
 	font-family: 'Oswald', sans-serif;
-    font-size: 44px;
+	font-size: 44px;
 
 }
 
 .link__tikTok:hover {
-	background-color: #000000;
-	color: #fff;
+	background-color: var(--black);
+	color: var(--white);
 }
 
 .link__instagram:hover {
-	background-color: #AE445A;
-	color: #fff;
+	background-color: var(--instagram-color);
+	color: var(--white);
 }
 
 .link__facebook:hover {
-	background-color: #6499E9;
-	color: #fff;
+	background-color: var(--light-blue);
+	color: var(--white);
 }
 
 
@@ -250,19 +278,19 @@ form label, form legend {
 
 	.imagem__perfil img {
 		width: 160px;
-	  	margin: 0 auto;
+		margin: 0 auto;
 		padding-left: 1em;
 	}
-  
+
 	.navegacao {
 		padding: 1em;
 	}
 
-	.navegacao ul li{
-	  display: flex;
-	  flex-direction: column;
-	  
-	 
+	.navegacao ul li {
+		display: flex;
+		flex-direction: column;
+
+
 	}
 
 	.banner {
@@ -275,16 +303,16 @@ form label, form legend {
 
 	.banner img {
 		width: 100%;
-		border: #FFFFFF solid 0.1px;
-  }
+		border: var(--white) solid 0.1px;
+	}
 
 	.apresentacao__videos {
 		display: flex;
 		flex-wrap: wrap;
-		background-color: #000000;
-	
+		background-color: var(--black);
 
-	} 
+
+	}
 
 
 
