@@ -9,6 +9,9 @@
 	--medium-pink: #f5c7e1;
 	--dark-blue: #252B48;
 	--instagram-color: #AE445A;
+	--green-lemon: #d0fc0e;
+
+	--font-primary: 'Oswald', sans-serif;
 
 
 }
@@ -30,41 +33,41 @@ body {
 
 .cabecalho {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	height: 280px;
 	background: var(--black);
-
 
 }
 
 .imagem__perfil img {
-	width: 35%;
-	height: 60%;
+	width: 200px;
+	height: auto;
 	border-radius: 50%;
+	margin: 1em
 }
 
-.navegacao ul li {
+.navegacao ul {
 	display: flex;
+	justify-content: space-between;
 	list-style-type: none;
+	gap: 22px;
+	margin: 0;
+	padding: 0;;
 
 }
 
 .navegacao a {
-	display: flex;
-	flex-direction: row;
 	text-transform: uppercase;
 	color: var(--light-pink);
 	font-weight: bold;
 	font-size: 30px;
 	text-decoration: none;
-	font-family: 'Oswald', sans-serif;
+	font-family: var(--font-primary);
 
 }
 
 .navegacao a:hover {
-	color: var(--light-blue);
+	color: var(--green-lemon );
 	text-decoration: none;
 }
 
@@ -286,7 +289,7 @@ form legend {
 		padding: 1em;
 	}
 
-	.navegacao ul li {
+	.navegacao ul {
 		display: flex;
 		flex-direction: column;
 
